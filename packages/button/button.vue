@@ -1,0 +1,22 @@
+<template>
+  <button class="st-button">
+    <span>{{type}}</span>
+  </button>
+</template>
+<script>
+  export default {
+    name: 'StButton',
+    props: {
+      type: {
+        type: String,
+        default: 'default'
+      },
+    },
+    methods: {
+      handleClick(evt) {
+        this.$emit('click', evt);
+      }
+    }
+  };
+</script>
+
