@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A Component Library for Vue.js.",
   "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "dev": "webpack --config webpack.demo.js",
     "start": "webpack-dev-server --open --config webpack.demo.js",
