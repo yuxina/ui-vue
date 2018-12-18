@@ -4,19 +4,22 @@
   </button>
 </template>
 <script>
-  export default {
-    name: 'StButton',
-    props: {
-      type: {
-        type: String,
-        default: 'default'
-      },
+export default {
+  name: 'StButton',
+  props: {
+    type: {
+      type: String,
+      default: 'default',
     },
-    methods: {
-      handleClick(evt) {
-        this.$emit('click', evt);
-      }
-    }
-  };
+  },
+  methods: {
+    handleClick (evt) {
+      this.$emit('click', evt)
+    },
+  },
+  mounted: function () {
+    window.dd = true
+  },
+}
 </script>
 

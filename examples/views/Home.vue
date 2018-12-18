@@ -5,16 +5,14 @@
 </template>
 <script>
 export default {
-  data() {
+  data () {
     return {
-      text: 'hello ~~'
-    };
+      text: 'hello ~~',
+    }
   },
   methods: {
 
-  }
+  },
 }
 </script>
-
-
 

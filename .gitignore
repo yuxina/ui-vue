@@ -1,5 +1,6 @@
 # 指定忽略目录和文件
 node_modules
+.idea
 .vscode
 lib
 dist

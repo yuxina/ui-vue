@@ -27,15 +27,15 @@
 export default {
   data () {
     return {
-      isExpanded: false,// 代码区域，默认折叠
-    };
+      isExpanded: false, // 代码区域，默认折叠
+    }
   },
   props: {
     jsfiddle: Object,
-    default() {
-      return {};
-    }
-  }
+    default () {
+      return {}
+    },
+  },
 }
 </script>
 <style lang="scss">
@@ -98,5 +98,4 @@ export default {
   }
 }
 </style>
-
 
