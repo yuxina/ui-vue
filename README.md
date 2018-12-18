@@ -20,3 +20,7 @@
 
 打包组件style
 
+##### npm run lint
+
+进行eslint校验
+
