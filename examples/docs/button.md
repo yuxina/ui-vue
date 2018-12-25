@@ -1,4 +1,4 @@
-<style scoped>
+<style>
   /* 调整当前示例的样式 可加scope避免样式冲突*/
   .st-button {
     font-weight: bold;

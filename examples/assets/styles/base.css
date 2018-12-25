@@ -1,0 +1,23 @@
+/* reset css */
+body,html,ul,ol,li {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Helvetica,'Microsoft YaHei',sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased
+}
+ul,ol,li {
+  list-style-type:none;
+}
+a {
+  color: #409eff;
+  text-decoration: none;
+}
+.w1200 {
+  width: 1200px;
+  margin: 0 auto;
+}
+.clearfix:after { visibility:hidden; display:block; font-size:0; content:""; clear:both; height:0;}
+.clearfix { *zoom:1;}
+.clear { clear:both;}

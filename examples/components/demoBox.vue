@@ -6,14 +6,10 @@
         <slot name="eg"></slot>
       </section>
       <section class="demo-box-code" v-show="isExpanded">
-        <div class="desc">
-          <!-- 描述 -->
-          <slot name="desc"></slot>
-        </div>
-        <div class="source">
-          <!-- 源码 -->
-          <slot name="source"></slot>
-        </div>
+        <!-- 描述 -->
+        <slot name="desc"></slot>
+        <!-- 源码 -->
+        <slot name="highlight"></slot>
       </section>
       <section class="demo-box-control" @click="isExpanded = !isExpanded">
         <span v-if="!isExpanded">查看代码</span>
@@ -89,7 +85,7 @@ export default {
         }
       }
     }
-    .source {
+    .highlight {
       margin: 10px;
     }
   }

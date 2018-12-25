@@ -1,4 +1,8 @@
 <template>
+  <!--
+    功能描述：
+    1.
+   -->
   <button class="st-button">
     <span>{{type}}</span>
   </button>

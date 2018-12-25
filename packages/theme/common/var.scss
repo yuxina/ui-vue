@@ -1,5 +1,4 @@
-/* Theme Variables */
-/* 主题常用变量 */
+/* Variables 常用变量 */
 
 /* 变量命名规范 
 1. 模块+描述
@@ -9,8 +8,58 @@ eg: color-theme: #0085d0;
 
 
 
-/* Colors */
-/* 颜色模块
-1. 注意，统一使用6位字符描述色值
-*/
+/* Colors 颜色模块 */
+/* 注意，统一使用6位字符描述色值 */
+
+/* Theme Color 主题色 */
 $color-theme: #0085d0;
+
+/* Status Color 状态色 */
+$color-state-success: #52C419;
+$color-state-warning: #FAAD15;
+$color-state-danger: #F5222D;
+
+/* Line and BG Color 边和背景色*/
+$color-line: #DCDCDC;
+$color-bg:#F7F8FA;
+$color-hover: #F3FBFF;
+
+/* Text Color 文本色 */
+$color-text-3: #333333;
+$color-text-6: #666666;
+$color-text-9: #999999;
+
+/* 控件色 */
+
+
+
+/* Font 字体 */
+$font-family: 'Microsoft Yahei';
+$font-size-base: 14px;
+$font-size-small: 12px;
+$font-size-large: 18px;
+$font-line-height: 1.5;
+
+ /* space 间距 */
+ $space-base: 5px;
+
+ /* Controls 控件 */
+
+ /* Button 按钮 */
+
+
+/* Checkbox 多选框 */
+
+
+/* Radio 单选框 */
+
+
+/* input 输入框 */
+
+
+/* textarea 文本框 */
+
+
+/* select 下拉框 */
+
+

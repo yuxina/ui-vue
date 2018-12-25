@@ -14,8 +14,13 @@ const config = {
     path: path.resolve(__dirname, 'dist')
   },
   resolve: {
+    modules: [
+      'node_modules', path.join(__dirname, '../node_modules')
+    ],
+    extensions: ['.js', '.vue', '.md'],
     alias: {
-      'vue': 'vue/dist/vue.js'
+      'vue': 'vue/dist/vue.js',
+      '@': path.join(__dirname, '')
     }
   },
   module: {
@@ -43,6 +48,17 @@ const config = {
           'style-loader',
           'css-loader',
           'sass-loader'
+        ]
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 1000
+            }
+          }
         ]
       },
       {
@@ -75,8 +91,8 @@ const config = {
                       // opening tag
                       return `<demo-box>
                               <div slot="eg">${content}</div>
-                              <div slot="desc">${descHTML}</div>
-                              <div slot="source">`
+                              <div class="desc" slot="desc">${descHTML}</div>
+                              <div class="highlight" slot="highlight">`
                     } else {
                       // closing tag
                       return '</div></demo-box>\n'

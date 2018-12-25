@@ -1,10 +1,10 @@
 import Vue from 'vue'
-import App from './App.vue'
+import App from './app.vue'
 import demoBox from './components/demoBox.vue'
 // 导入组件库 SRD-UI-CL
 import SrdUiVue from '../packages/index'
 import '../packages/theme/index.scss'
-import 'highlight.js/styles/color-brewer.css'
+import 'highlight.js/styles/vs.css'
 // 注册组件库
 Vue.use(SrdUiVue)
 
